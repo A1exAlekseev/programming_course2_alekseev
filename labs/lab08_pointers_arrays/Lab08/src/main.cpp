@@ -44,6 +44,8 @@ void increase(int& ref, int* ptr) {
 }
  int main() {
     // Упражнение 2.1
+
+     cout << "=== Exercise 2.2 ===" << endl;
      int a = 5;
      int b = 10;
 
@@ -51,10 +53,10 @@ void increase(int& ref, int* ptr) {
 
      increase(a, &b);
 
-     cout << "After: a = " << a << ", b = " << b << endl;
+     cout << "After: a = " << a << ", b = " << b << endl << endl;
     
      // Упражнение 3
-    cout << "=== Exercise 3.===" << endl;
+    cout << "=== Exercise 3 ===" << endl;
 
     cout << "1. Static array, index addressing:" << endl;
     int staticArrIndex[SIZE];
@@ -96,7 +98,7 @@ void increase(int& ref, int* ptr) {
     }
     delete[] dynArrPtr;
 
-    cout << "\n\n=== Combining ordered arrays ===" << endl;
+    cout << "\n\n= Combining ordered arrays =" << endl;
 
     int* arr1 = new int[SIZE1];
     int* arr2 = new int[SIZE2];
@@ -156,8 +158,9 @@ struct Node {
     Node* head = nullptr;
     Node* tail = nullptr;
     const int COUNT = 10;
-
-    cout << "\n\n=== Doubly linked list ===" << endl;
+    
+    cout << "\n=== Excersise 4 ===";
+    cout << "\n= Doubly linked list =" << endl;
 
     for (int i = 1; i <= COUNT; i++) {
         Node* newNode = new Node;
@@ -199,7 +202,7 @@ struct Node {
 
     cout << "--------------------------------------------------------------------------------" << endl << endl;
 
-    cout << "=== LIST STRUCTURE ===" << endl;
+    cout << "= LIST STRUCTURE =" << endl;
     cout << "NULL";
 
     current = head;
@@ -210,7 +213,7 @@ struct Node {
 
     cout << "NULL" << endl << endl;
 
-    cout << "=== Forward ===" << endl;
+    cout << "= Forward =" << endl;
     current = head;
     while (current != nullptr) {
         cout << current->data << " ";
@@ -218,7 +221,7 @@ struct Node {
     }
     cout << endl << endl;
 
-    cout << "=== Backward ===" << endl;
+    cout << "= Backward =" << endl;
     current = tail;
     while (current != nullptr) {
         cout << current->data << " ";
